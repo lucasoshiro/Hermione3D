@@ -34,7 +34,7 @@ namespace Language_pt_br {
   constexpr uint8_t    CHARSIZE                            = 2;
   PROGMEM Language_Str LANGUAGE                            = _UxGT("Portuguese (BR)");
 
-  PROGMEM Language_Str WELCOME_MSG                         = MACHINE_NAME _UxGT(" pronto.");
+  PROGMEM Language_Str WELCOME_MSG                         = MACHINE_NAME _UxGT(" pronta."); // ela é menina
   PROGMEM Language_Str MSG_YES                             = _UxGT("SIM");
   PROGMEM Language_Str MSG_NO                              = _UxGT("NÃO");
   PROGMEM Language_Str MSG_BACK                            = _UxGT("Voltar");
