@@ -196,6 +196,9 @@ void _menu_temp_filament_op(const PauseMode mode, const int8_t extruder) {
             }
           }
         #endif
+
+        // cold pull
+        GCODES_ITEM_P(PSTR("Cold pull"), PSTR("M302 P1\nM104 S100\nM702;M302 P0"));
       } // !printer_busy
     #endif
 
