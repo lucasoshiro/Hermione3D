@@ -983,11 +983,18 @@ $(BUILD_DIR)/arduino/%.o: %.S $(MAKEFILE)
 	$(Pecho) "  CXX   $<"
 	$P $(CXX) -MMD -c $(ALL_ASFLAGS) $< -o $@
 
+# Tags
+
+tags:
+	ctags -R .
+
+TAGS:
+	ctags -e -R .
+
 # Target: clean project.
 clean:
 	$(Pecho) "  RMDIR $(BUILD_DIR)/"
-	$P rm -rf $(BUILD_DIR)
-
+	$P rm -rf $(BUILD_DIR) TAGS tags
 
 .PHONY: all build elf hex eep lss sym program coff extcoff clean depend sizebefore sizeafter
 
