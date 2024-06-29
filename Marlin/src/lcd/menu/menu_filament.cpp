@@ -205,8 +205,6 @@ void menu_change_filament() {
           }
         #endif
 
-        // cold pull
-        GCODES_ITEM_P(PSTR("Cold pull"), PSTR("M302 P1\nM104 S100\nM702;M302 P0"));
       } // !printer_busy
     #endif
 
